@@ -1,0 +1,10 @@
+{
+"name": "Weather_Stats",
+  "description": "Weather App",
+    "version": "0.0.1",
+      "private": true,
+        "dependencies": {
+            "express": "latest",
+            "ejs": "~0.8.4"
+        }                         
+}
