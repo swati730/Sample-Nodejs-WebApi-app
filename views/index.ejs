@@ -1,5 +1,10 @@
 <html>
 <head>
+<script src="/angular/angular.js"></script>
+<script src="/angular/angular-route.js"></script>
+<script src="/app.js"></script>
+<script src="/Controllers.js"></script>
+
 <script>
 function validateZip()
 {
@@ -13,7 +18,12 @@ return false;
 }
 </script>
 </head>
-<body>
+<body >
+<div ng-app='myApp' ng-controller="user_profile" >
+{{test}}
+<a href = "/user">User </a><br/>
+<div ng-view></div>
+</div>
 <a href="/auth/github">Login</a>
 <form method="post">
 US Zip Code <input type=text id="zip" name="zip"></input></br>

@@ -13,7 +13,12 @@ app.use(express.json());
 auth.git_authenticate();
 var request = require('request');
  var PORT = 3000;
-
+app.use(express.favicon());
+app.use(express.json());
+app.use(express.urlencoded());
+app.use(express.methodOverride());
+app.use(app.router);
+app.use(express.static(path.join(__dirname, 'public')));
  app.get('/', function (req, res) {
 //   res.send("Hello World!");
    res.render('index');  
@@ -55,7 +60,6 @@ request(options, callback);
 
 });
 
- 
 
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) { return next(); }
