@@ -1,0 +1,13 @@
+{
+  "name": "Weather_Stats",
+  "description": "Weather App",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "latest",
+    "ejs": "~0.8.4",
+    "passport": "~0.1.17",
+    "passport-github": "~0.1.5",
+    "request": "~2.30.0"
+  }
+}

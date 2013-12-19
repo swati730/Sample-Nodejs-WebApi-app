@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function validateZip()
+{
+var zip=document.getElementById('zip').value;
+var length = zip.length;
+if(isNaN(zip)|| length!=5)
+{
+alert("Enter a Valid zip code! ");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<a href="/auth/github">Login</a>
+<form method="post">
+US Zip Code <input type=text id="zip" name="zip"></input></br>
+<input type="submit" id="search" value="Submit" onclick = "return validateZip()" > </input> 
+</form>
+</body>
+</html>
