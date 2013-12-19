@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "Weather_Stats",
   "description": "Weather App",
   "version": "0.0.1",
@@ -11,14 +10,4 @@
     "passport-github": "~0.1.5",
     "request": "~2.30.0"
   }
-=======
-"name": "Weather_Stats",
-  "description": "Weather App",
-    "version": "0.0.1",
-      "private": true,
-        "dependencies": {
-            "express": "latest",
-            "ejs": "~0.8.4"
-        }                         
->>>>>>> 8b13576fa3a30707b53b2a74fcefc1a6a0426490
 }
