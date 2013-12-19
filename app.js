@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+<<<<<<< HEAD
 var passport = require('passport');
 var app = exports.app = express();
 var weather = require('./weatherController.js');
@@ -12,6 +13,13 @@ app.set('view engine','ejs');
 app.use(express.json());
 auth.git_authenticate();
 var request = require('request');
+=======
+var app = exports.app = express();
+var weather = require('./weatherController.js');
+app.use(express.bodyParser());
+app.set('view engine','ejs');
+app.use(express.json());
+>>>>>>> 8b13576fa3a30707b53b2a74fcefc1a6a0426490
  var PORT = 3000;
 
  app.get('/', function (req, res) {
@@ -29,6 +37,7 @@ res.render('weather',{data:data1});
 });
 
 });
+<<<<<<< HEAD
 app.get('/auth/github',
   passport.authenticate('github'),
   function(req, res){
@@ -65,5 +74,8 @@ app.get('/logout', function(req, res){
   req.logout();
   res.render('index');
 });
+=======
+
+>>>>>>> 8b13576fa3a30707b53b2a74fcefc1a6a0426490
    app.listen(PORT)
    console.log('Running on http://localhost:' + PORT);
