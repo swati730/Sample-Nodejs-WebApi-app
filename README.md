@@ -33,10 +33,12 @@ The app has 3 features:
 	Functionality:   
 	
 	    - Passport requires a strategy- we use OAuth Strategy with github.
-	    - OAuth uses a 2-step web authentication flow. It lets external apps request authorization to private details in a user’s GitHub account without getting their password.
+	    - OAuth uses a 2-step web authentication flow. It lets external apps request authorization to private
+        details in a user’s GitHub account without getting their password.
         - To know more about the oauth flow, go through http://developer.github.com/v3/oauth/#web-application-flow
         -- Create an app on github 
-	       - Go to github.com - Go to account settings - Applications - Register new application - enter the details n register.		
+	   - Go to github.com - Go to account settings - Applications - Register new application - enter the details and
+	   register.	
         - You will get a Client Id and Secret that is used with passport to authenticate the user .
 		- Initialise passport with githubstrategy and define the client is, secret and callback url.
 		- Use passport.authenticate to authenticate the user to github and then to authenticate with app.		
